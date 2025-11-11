@@ -2,10 +2,10 @@
 
 	//application details
 		$apps[$x]['name'] = "Fail2Ban";
-		$apps[$x]['uuid'] = "9cda5dab-a584-4ff5-a4e4-6d95d52d92dc";
-		$apps[$x]['category'] = "Switch";
+		$apps[$x]['uuid'] = "dc8a2861-f6eb-4116-b5fb-f2c95fd5e65a";
+		$apps[$x]['category'] = "";
 		$apps[$x]['subcategory'] = "";
-		$apps[$x]['version'] = "1.0";
+		$apps[$x]['version'] = "1.1";
 		$apps[$x]['license'] = "CC-BY-SA 3.0";
 		$apps[$x]['url'] = "https://salsa.debian.org/benedikt-guest";
 		$apps[$x]['description']['en-us'] = "(Un)ban hosts";
@@ -39,7 +39,7 @@
                 $y++;
                 $apps[$x]['permissions'][$y]['name'] = "fail2ban_ban";
                 $apps[$x]['permissions'][$y]['groups'][] = "superadmin";
-                $apps[$x]['permissions'][$y]['groups'][] = "admin";
+#                $apps[$x]['permissions'][$y]['groups'][] = "admin";
                 $y++;
                 $apps[$x]['permissions'][$y]['name'] = "fail2ban_unban";
                 $apps[$x]['permissions'][$y]['groups'][] = "superadmin";
